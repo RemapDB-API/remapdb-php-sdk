@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RemapDB\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \RemapDB\ObjectSerializer;
 
 /**
  * Manufacturer Class Doc Comment
  *
  * @category Class
  * @description Manufacturer object
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class Manufacturer implements ModelInterface, ArrayAccess
         'name' => 'string',
         'slug' => 'string',
         'logo' => 'string',
-        'type' => '\Swagger\Client\Model\ManufacturerType'
+        'type' => '\RemapDB\Model\ManufacturerType'
     ];
 
     /**
@@ -325,7 +325,7 @@ class Manufacturer implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \Swagger\Client\Model\ManufacturerType
+     * @return \RemapDB\Model\ManufacturerType
      */
     public function getType()
     {
@@ -335,7 +335,7 @@ class Manufacturer implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \Swagger\Client\Model\ManufacturerType $type type
+     * @param \RemapDB\Model\ManufacturerType $type type
      *
      * @return $this
      */

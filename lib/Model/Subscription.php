@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RemapDB\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \RemapDB\ObjectSerializer;
 
 /**
  * Subscription Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,10 +57,10 @@ class Subscription implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'api_key' => 'string',
-        'scopes' => '\Swagger\Client\Model\AccessScope[]',
+        'scopes' => '\RemapDB\Model\AccessScope[]',
         'calls_limit' => 'int',
         'created' => '\DateTime',
-        'subscription' => '\Swagger\Client\Model\SubscriptionSubscription'
+        'subscription' => '\RemapDB\Model\SubscriptionSubscription'
     ];
 
     /**
@@ -252,7 +252,7 @@ class Subscription implements ModelInterface, ArrayAccess
     /**
      * Gets scopes
      *
-     * @return \Swagger\Client\Model\AccessScope[]
+     * @return \RemapDB\Model\AccessScope[]
      */
     public function getScopes()
     {
@@ -262,7 +262,7 @@ class Subscription implements ModelInterface, ArrayAccess
     /**
      * Sets scopes
      *
-     * @param \Swagger\Client\Model\AccessScope[] $scopes Array with strings. Contains all the access scopes that this API key has.
+     * @param \RemapDB\Model\AccessScope[] $scopes Array with strings. Contains all the access scopes that this API key has.
      *
      * @return $this
      */
@@ -324,7 +324,7 @@ class Subscription implements ModelInterface, ArrayAccess
     /**
      * Gets subscription
      *
-     * @return \Swagger\Client\Model\SubscriptionSubscription
+     * @return \RemapDB\Model\SubscriptionSubscription
      */
     public function getSubscription()
     {
@@ -334,7 +334,7 @@ class Subscription implements ModelInterface, ArrayAccess
     /**
      * Sets subscription
      *
-     * @param \Swagger\Client\Model\SubscriptionSubscription $subscription subscription
+     * @param \RemapDB\Model\SubscriptionSubscription $subscription subscription
      *
      * @return $this
      */

@@ -12,10 +12,10 @@ Name | Type | Description | Notes
 **cylinders** | **int** | Number of cylinders. | [optional] 
 **engine_type** | **string** | Engine type. | [optional] 
 **fuel** | **string** | Name of the fuel. | [optional] 
-**ecus** | [**\Swagger\Client\Model\EngineEcu[]**](EngineEcu.md) | List of ECU&#x27;s used in this engine. | [optional] 
-**tcus** | [**\Swagger\Client\Model\EngineTcu[]**](EngineTcu.md) | List of TCU&#x27;s used in this engine. | [optional] 
-**performance** | [**\Swagger\Client\Model\EnginePerformance**](EnginePerformance.md) |  | [optional] 
-**tuning** | [**\Swagger\Client\Model\EngineTuning**](EngineTuning.md) |  | [optional] 
+**ecus** | [**\RemapDB\Model\EngineEcu[]**](EngineEcu.md) | List of ECU&#x27;s used in this engine. | [optional] 
+**tcus** | [**\RemapDB\Model\EngineTcu[]**](EngineTcu.md) | List of TCU&#x27;s used in this engine. | [optional] 
+**performance** | [**\RemapDB\Model\EnginePerformance**](EnginePerformance.md) |  | [optional] 
+**tuning** | [**\RemapDB\Model\EngineTuning**](EngineTuning.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

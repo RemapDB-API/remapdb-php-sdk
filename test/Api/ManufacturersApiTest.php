@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,18 +25,18 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace Swagger\Client;
+namespace RemapDB;
 
-use Swagger\Client\Configuration;
-use Swagger\Client\ApiException;
-use Swagger\Client\ObjectSerializer;
+use RemapDB\Configuration;
+use RemapDB\ApiException;
+use RemapDB\ObjectSerializer;
 use PHPUnit\Framework\TestCase;
 
 /**
  * ManufacturersApiTest Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

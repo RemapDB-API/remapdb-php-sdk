@@ -1,4 +1,4 @@
-# Swagger\Client\GenerationsApi
+# RemapDB\GenerationsApi
 
 All URIs are relative to *https://api.remapdb.com/v1/vehicles*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**listGenerations**](GenerationsApi.md#listgenerations) | **GET** /generations/model/{model_id} | Show all generations from specific model
 
 # **getGeneration**
-> \Swagger\Client\Model\GenerationWEngines getGeneration($generation_id, $accept_language)
+> \RemapDB\Model\GenerationWEngines getGeneration($generation_id, $accept_language)
 
 Show all generation metadata along with its corresponding engines
 
@@ -19,11 +19,11 @@ Show all generation metadata along with its corresponding engines.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('x-api-key', 'YOUR_API_KEY');
+$config = RemapDB\Configuration::getDefaultConfiguration()->setApiKey('x-api-key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('x-api-key', 'Bearer');
+// $config = RemapDB\Configuration::getDefaultConfiguration()->setApiKeyPrefix('x-api-key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\GenerationsApi(
+$apiInstance = new RemapDB\api\GenerationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GenerationWEngines**](../Model/GenerationWEngines.md)
+[**\RemapDB\Model\GenerationWEngines**](../Model/GenerationWEngines.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **listGenerations**
-> \Swagger\Client\Model\ModelGeneration[] listGenerations($model_id, $accept_language)
+> \RemapDB\Model\ModelGeneration[] listGenerations($model_id, $accept_language)
 
 Show all generations from specific model
 
@@ -75,11 +75,11 @@ Show all generations from specific model.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('x-api-key', 'YOUR_API_KEY');
+$config = RemapDB\Configuration::getDefaultConfiguration()->setApiKey('x-api-key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('x-api-key', 'Bearer');
+// $config = RemapDB\Configuration::getDefaultConfiguration()->setApiKeyPrefix('x-api-key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\GenerationsApi(
+$apiInstance = new RemapDB\api\GenerationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -106,7 +106,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ModelGeneration[]**](../Model/ModelGeneration.md)
+[**\RemapDB\Model\ModelGeneration[]**](../Model/ModelGeneration.md)
 
 ### Authorization
 

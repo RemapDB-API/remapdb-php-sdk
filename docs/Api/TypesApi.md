@@ -1,4 +1,4 @@
-# Swagger\Client\TypesApi
+# RemapDB\TypesApi
 
 All URIs are relative to *https://api.remapdb.com/v1/vehicles*
 
@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**listTypes**](TypesApi.md#listtypes) | **GET** /types | Show vehicle types
 
 # **listTypes**
-> \Swagger\Client\Model\VehicleType[] listTypes($accept_language)
+> \RemapDB\Model\VehicleType[] listTypes($accept_language)
 
 Show vehicle types
 
@@ -18,11 +18,11 @@ Provides a list of all available vehicle types.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('x-api-key', 'YOUR_API_KEY');
+$config = RemapDB\Configuration::getDefaultConfiguration()->setApiKey('x-api-key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('x-api-key', 'Bearer');
+// $config = RemapDB\Configuration::getDefaultConfiguration()->setApiKeyPrefix('x-api-key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\TypesApi(
+$apiInstance = new RemapDB\api\TypesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\VehicleType[]**](../Model/VehicleType.md)
+[**\RemapDB\Model\VehicleType[]**](../Model/VehicleType.md)
 
 ### Authorization
 

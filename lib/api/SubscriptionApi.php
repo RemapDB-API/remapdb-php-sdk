@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RemapDB\api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RemapDB\ApiException;
+use RemapDB\Configuration;
+use RemapDB\HeaderSelector;
+use RemapDB\ObjectSerializer;
 
 /**
  * SubscriptionApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class SubscriptionApi
      * Check for active subscription
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RemapDB\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Subscription
+     * @return \RemapDB\Model\Subscription
      */
     public function checkSubscription()
     {
@@ -108,13 +108,13 @@ class SubscriptionApi
      * Check for active subscription
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RemapDB\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Subscription, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RemapDB\Model\Subscription, HTTP status code, HTTP response headers (array of strings)
      */
     public function checkSubscriptionWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\Subscription';
+        $returnType = '\RemapDB\Model\Subscription';
         $request = $this->checkSubscriptionRequest();
 
         try {
@@ -166,7 +166,7 @@ class SubscriptionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Subscription',
+                        '\RemapDB\Model\Subscription',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -174,7 +174,7 @@ class SubscriptionApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -182,7 +182,7 @@ class SubscriptionApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -190,7 +190,7 @@ class SubscriptionApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -230,7 +230,7 @@ class SubscriptionApi
      */
     public function checkSubscriptionAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\Subscription';
+        $returnType = '\RemapDB\Model\Subscription';
         $request = $this->checkSubscriptionRequest();
 
         return $this->client

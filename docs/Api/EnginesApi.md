@@ -1,4 +1,4 @@
-# Swagger\Client\EnginesApi
+# RemapDB\EnginesApi
 
 All URIs are relative to *https://api.remapdb.com/v1/vehicles*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**listEngines**](EnginesApi.md#listengines) | **GET** /engines/generation/{generation_id} | Show all engines from specific generation
 
 # **getEngine**
-> \Swagger\Client\Model\EngineWTuning getEngine($engine_id, $accept_language)
+> \RemapDB\Model\EngineWTuning getEngine($engine_id, $accept_language)
 
 Show engine metadata along with its performance and tuning information
 
@@ -19,11 +19,11 @@ Show engine metadata along with its performance and tuning information.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('x-api-key', 'YOUR_API_KEY');
+$config = RemapDB\Configuration::getDefaultConfiguration()->setApiKey('x-api-key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('x-api-key', 'Bearer');
+// $config = RemapDB\Configuration::getDefaultConfiguration()->setApiKeyPrefix('x-api-key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\EnginesApi(
+$apiInstance = new RemapDB\api\EnginesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\EngineWTuning**](../Model/EngineWTuning.md)
+[**\RemapDB\Model\EngineWTuning**](../Model/EngineWTuning.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **listEngines**
-> \Swagger\Client\Model\Engine[] listEngines($generation_id, $accept_language)
+> \RemapDB\Model\Engine[] listEngines($generation_id, $accept_language)
 
 Show all engines from specific generation
 
@@ -75,11 +75,11 @@ Show all engines from specific generation.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('x-api-key', 'YOUR_API_KEY');
+$config = RemapDB\Configuration::getDefaultConfiguration()->setApiKey('x-api-key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('x-api-key', 'Bearer');
+// $config = RemapDB\Configuration::getDefaultConfiguration()->setApiKeyPrefix('x-api-key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\EnginesApi(
+$apiInstance = new RemapDB\api\EnginesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -106,7 +106,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Engine[]**](../Model/Engine.md)
+[**\RemapDB\Model\Engine[]**](../Model/Engine.md)
 
 ### Authorization
 

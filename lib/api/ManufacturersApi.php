@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RemapDB\api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RemapDB\ApiException;
+use RemapDB\Configuration;
+use RemapDB\HeaderSelector;
+use RemapDB\ObjectSerializer;
 
 /**
  * ManufacturersApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class ManufacturersApi
      * @param  int $manufacturer_id Manufacturer ID. (required)
      * @param  string $accept_language Method accept custom language. Content of the header should be the code of the language you are requesting. E.g.: &#x60;en&#x60;. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RemapDB\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ManufacturerWModels
+     * @return \RemapDB\Model\ManufacturerWModels
      */
     public function getManufacturer($manufacturer_id, $accept_language = null)
     {
@@ -112,13 +112,13 @@ class ManufacturersApi
      * @param  int $manufacturer_id Manufacturer ID. (required)
      * @param  string $accept_language Method accept custom language. Content of the header should be the code of the language you are requesting. E.g.: &#x60;en&#x60;. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RemapDB\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ManufacturerWModels, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RemapDB\Model\ManufacturerWModels, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManufacturerWithHttpInfo($manufacturer_id, $accept_language = null)
     {
-        $returnType = '\Swagger\Client\Model\ManufacturerWModels';
+        $returnType = '\RemapDB\Model\ManufacturerWModels';
         $request = $this->getManufacturerRequest($manufacturer_id, $accept_language);
 
         try {
@@ -170,7 +170,7 @@ class ManufacturersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ManufacturerWModels',
+                        '\RemapDB\Model\ManufacturerWModels',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -178,7 +178,7 @@ class ManufacturersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -186,7 +186,7 @@ class ManufacturersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -194,7 +194,7 @@ class ManufacturersApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -202,7 +202,7 @@ class ManufacturersApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -210,7 +210,7 @@ class ManufacturersApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -254,7 +254,7 @@ class ManufacturersApi
      */
     public function getManufacturerAsyncWithHttpInfo($manufacturer_id, $accept_language = null)
     {
-        $returnType = '\Swagger\Client\Model\ManufacturerWModels';
+        $returnType = '\RemapDB\Model\ManufacturerWModels';
         $request = $this->getManufacturerRequest($manufacturer_id, $accept_language);
 
         return $this->client
@@ -410,9 +410,9 @@ class ManufacturersApi
      * @param  int $type_id Vehicle type ID. (required)
      * @param  string $accept_language Method accept custom language. Content of the header should be the code of the language you are requesting. E.g.: &#x60;en&#x60;. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RemapDB\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Manufacturer[]
+     * @return \RemapDB\Model\Manufacturer[]
      */
     public function listManufacturers($type_id, $accept_language = null)
     {
@@ -428,13 +428,13 @@ class ManufacturersApi
      * @param  int $type_id Vehicle type ID. (required)
      * @param  string $accept_language Method accept custom language. Content of the header should be the code of the language you are requesting. E.g.: &#x60;en&#x60;. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RemapDB\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Manufacturer[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RemapDB\Model\Manufacturer[], HTTP status code, HTTP response headers (array of strings)
      */
     public function listManufacturersWithHttpInfo($type_id, $accept_language = null)
     {
-        $returnType = '\Swagger\Client\Model\Manufacturer[]';
+        $returnType = '\RemapDB\Model\Manufacturer[]';
         $request = $this->listManufacturersRequest($type_id, $accept_language);
 
         try {
@@ -486,7 +486,7 @@ class ManufacturersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Manufacturer[]',
+                        '\RemapDB\Model\Manufacturer[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -494,7 +494,7 @@ class ManufacturersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -502,7 +502,7 @@ class ManufacturersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -510,7 +510,7 @@ class ManufacturersApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -518,7 +518,7 @@ class ManufacturersApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -526,7 +526,7 @@ class ManufacturersApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -570,7 +570,7 @@ class ManufacturersApi
      */
     public function listManufacturersAsyncWithHttpInfo($type_id, $accept_language = null)
     {
-        $returnType = '\Swagger\Client\Model\Manufacturer[]';
+        $returnType = '\RemapDB\Model\Manufacturer[]';
         $request = $this->listManufacturersRequest($type_id, $accept_language);
 
         return $this->client

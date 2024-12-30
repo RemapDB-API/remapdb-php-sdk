@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RemapDB\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \RemapDB\ObjectSerializer;
 
 /**
  * EngineStage Class Doc Comment
  *
  * @category Class
  * @description Stage object
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class EngineStage implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'stage_number' => 'int',
-        'performance' => '\Swagger\Client\Model\EngineStagePerformance',
+        'performance' => '\RemapDB\Model\EngineStagePerformance',
         'modifications_required' => 'string'
     ];
 
@@ -241,7 +241,7 @@ class EngineStage implements ModelInterface, ArrayAccess
     /**
      * Gets performance
      *
-     * @return \Swagger\Client\Model\EngineStagePerformance
+     * @return \RemapDB\Model\EngineStagePerformance
      */
     public function getPerformance()
     {
@@ -251,7 +251,7 @@ class EngineStage implements ModelInterface, ArrayAccess
     /**
      * Sets performance
      *
-     * @param \Swagger\Client\Model\EngineStagePerformance $performance performance
+     * @param \RemapDB\Model\EngineStagePerformance $performance performance
      *
      * @return $this
      */

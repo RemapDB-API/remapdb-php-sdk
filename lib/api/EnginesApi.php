@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RemapDB\api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RemapDB\ApiException;
+use RemapDB\Configuration;
+use RemapDB\HeaderSelector;
+use RemapDB\ObjectSerializer;
 
 /**
  * EnginesApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class EnginesApi
      * @param  int $engine_id Engine ID. (required)
      * @param  string $accept_language Method accept custom language. Content of the header should be the code of the language you are requesting. E.g.: &#x60;en&#x60;. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RemapDB\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\EngineWTuning
+     * @return \RemapDB\Model\EngineWTuning
      */
     public function getEngine($engine_id, $accept_language = null)
     {
@@ -112,13 +112,13 @@ class EnginesApi
      * @param  int $engine_id Engine ID. (required)
      * @param  string $accept_language Method accept custom language. Content of the header should be the code of the language you are requesting. E.g.: &#x60;en&#x60;. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RemapDB\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\EngineWTuning, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RemapDB\Model\EngineWTuning, HTTP status code, HTTP response headers (array of strings)
      */
     public function getEngineWithHttpInfo($engine_id, $accept_language = null)
     {
-        $returnType = '\Swagger\Client\Model\EngineWTuning';
+        $returnType = '\RemapDB\Model\EngineWTuning';
         $request = $this->getEngineRequest($engine_id, $accept_language);
 
         try {
@@ -170,7 +170,7 @@ class EnginesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\EngineWTuning',
+                        '\RemapDB\Model\EngineWTuning',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -178,7 +178,7 @@ class EnginesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -186,7 +186,7 @@ class EnginesApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -194,7 +194,7 @@ class EnginesApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -202,7 +202,7 @@ class EnginesApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -210,7 +210,7 @@ class EnginesApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -254,7 +254,7 @@ class EnginesApi
      */
     public function getEngineAsyncWithHttpInfo($engine_id, $accept_language = null)
     {
-        $returnType = '\Swagger\Client\Model\EngineWTuning';
+        $returnType = '\RemapDB\Model\EngineWTuning';
         $request = $this->getEngineRequest($engine_id, $accept_language);
 
         return $this->client
@@ -410,9 +410,9 @@ class EnginesApi
      * @param  int $generation_id Generation ID. (required)
      * @param  string $accept_language Method accept custom language. Content of the header should be the code of the language you are requesting. E.g.: &#x60;en&#x60;. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RemapDB\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Engine[]
+     * @return \RemapDB\Model\Engine[]
      */
     public function listEngines($generation_id, $accept_language = null)
     {
@@ -428,13 +428,13 @@ class EnginesApi
      * @param  int $generation_id Generation ID. (required)
      * @param  string $accept_language Method accept custom language. Content of the header should be the code of the language you are requesting. E.g.: &#x60;en&#x60;. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RemapDB\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Engine[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RemapDB\Model\Engine[], HTTP status code, HTTP response headers (array of strings)
      */
     public function listEnginesWithHttpInfo($generation_id, $accept_language = null)
     {
-        $returnType = '\Swagger\Client\Model\Engine[]';
+        $returnType = '\RemapDB\Model\Engine[]';
         $request = $this->listEnginesRequest($generation_id, $accept_language);
 
         try {
@@ -486,7 +486,7 @@ class EnginesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Engine[]',
+                        '\RemapDB\Model\Engine[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -494,7 +494,7 @@ class EnginesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -502,7 +502,7 @@ class EnginesApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -510,7 +510,7 @@ class EnginesApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -518,7 +518,7 @@ class EnginesApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -526,7 +526,7 @@ class EnginesApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -570,7 +570,7 @@ class EnginesApi
      */
     public function listEnginesAsyncWithHttpInfo($generation_id, $accept_language = null)
     {
-        $returnType = '\Swagger\Client\Model\Engine[]';
+        $returnType = '\RemapDB\Model\Engine[]';
         $request = $this->listEnginesRequest($generation_id, $accept_language);
 
         return $this->client

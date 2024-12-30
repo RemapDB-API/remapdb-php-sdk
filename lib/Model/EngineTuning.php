@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RemapDB\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \RemapDB\ObjectSerializer;
 
 /**
  * EngineTuning Class Doc Comment
  *
  * @category Class
  * @description Engine tuning object
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,10 +57,10 @@ class EngineTuning implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'options' => '\Swagger\Client\Model\TuningOption[]',
-        'read_tools' => '\Swagger\Client\Model\ReadTool[]',
-        'work_methods' => '\Swagger\Client\Model\WorkMethod[]',
-        'stages' => '\Swagger\Client\Model\EngineStage[]'
+        'options' => '\RemapDB\Model\TuningOption[]',
+        'read_tools' => '\RemapDB\Model\ReadTool[]',
+        'work_methods' => '\RemapDB\Model\WorkMethod[]',
+        'stages' => '\RemapDB\Model\EngineStage[]'
     ];
 
     /**
@@ -223,7 +223,7 @@ class EngineTuning implements ModelInterface, ArrayAccess
     /**
      * Gets options
      *
-     * @return \Swagger\Client\Model\TuningOption[]
+     * @return \RemapDB\Model\TuningOption[]
      */
     public function getOptions()
     {
@@ -233,7 +233,7 @@ class EngineTuning implements ModelInterface, ArrayAccess
     /**
      * Sets options
      *
-     * @param \Swagger\Client\Model\TuningOption[] $options Available remap options for this engine.
+     * @param \RemapDB\Model\TuningOption[] $options Available remap options for this engine.
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class EngineTuning implements ModelInterface, ArrayAccess
     /**
      * Gets read_tools
      *
-     * @return \Swagger\Client\Model\ReadTool[]
+     * @return \RemapDB\Model\ReadTool[]
      */
     public function getReadTools()
     {
@@ -257,7 +257,7 @@ class EngineTuning implements ModelInterface, ArrayAccess
     /**
      * Sets read_tools
      *
-     * @param \Swagger\Client\Model\ReadTool[] $read_tools List with the tuning tools which can be used to read this engine.
+     * @param \RemapDB\Model\ReadTool[] $read_tools List with the tuning tools which can be used to read this engine.
      *
      * @return $this
      */
@@ -271,7 +271,7 @@ class EngineTuning implements ModelInterface, ArrayAccess
     /**
      * Gets work_methods
      *
-     * @return \Swagger\Client\Model\WorkMethod[]
+     * @return \RemapDB\Model\WorkMethod[]
      */
     public function getWorkMethods()
     {
@@ -281,7 +281,7 @@ class EngineTuning implements ModelInterface, ArrayAccess
     /**
      * Sets work_methods
      *
-     * @param \Swagger\Client\Model\WorkMethod[] $work_methods List with the methods to use when reading this engine.
+     * @param \RemapDB\Model\WorkMethod[] $work_methods List with the methods to use when reading this engine.
      *
      * @return $this
      */
@@ -295,7 +295,7 @@ class EngineTuning implements ModelInterface, ArrayAccess
     /**
      * Gets stages
      *
-     * @return \Swagger\Client\Model\EngineStage[]
+     * @return \RemapDB\Model\EngineStage[]
      */
     public function getStages()
     {
@@ -305,7 +305,7 @@ class EngineTuning implements ModelInterface, ArrayAccess
     /**
      * Sets stages
      *
-     * @param \Swagger\Client\Model\EngineStage[] $stages List with Remap/Tuning Stages.
+     * @param \RemapDB\Model\EngineStage[] $stages List with Remap/Tuning Stages.
      *
      * @return $this
      */

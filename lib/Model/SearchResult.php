@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RemapDB\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \RemapDB\ObjectSerializer;
 
 /**
  * SearchResult Class Doc Comment
  *
  * @category Class
  * @description Search result object
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,11 +57,11 @@ class SearchResult implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'type' => '\Swagger\Client\Model\VehicleTypeShort',
-        'manufacturer' => '\Swagger\Client\Model\ManufacturerShort',
-        'model' => '\Swagger\Client\Model\ModelShort',
-        'generation' => '\Swagger\Client\Model\GenerationShort',
-        'engine' => '\Swagger\Client\Model\EngineShort'
+        'type' => '\RemapDB\Model\VehicleTypeShort',
+        'manufacturer' => '\RemapDB\Model\ManufacturerShort',
+        'model' => '\RemapDB\Model\ModelShort',
+        'generation' => '\RemapDB\Model\GenerationShort',
+        'engine' => '\RemapDB\Model\EngineShort'
     ];
 
     /**
@@ -229,7 +229,7 @@ class SearchResult implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \Swagger\Client\Model\VehicleTypeShort
+     * @return \RemapDB\Model\VehicleTypeShort
      */
     public function getType()
     {
@@ -239,7 +239,7 @@ class SearchResult implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \Swagger\Client\Model\VehicleTypeShort $type type
+     * @param \RemapDB\Model\VehicleTypeShort $type type
      *
      * @return $this
      */
@@ -253,7 +253,7 @@ class SearchResult implements ModelInterface, ArrayAccess
     /**
      * Gets manufacturer
      *
-     * @return \Swagger\Client\Model\ManufacturerShort
+     * @return \RemapDB\Model\ManufacturerShort
      */
     public function getManufacturer()
     {
@@ -263,7 +263,7 @@ class SearchResult implements ModelInterface, ArrayAccess
     /**
      * Sets manufacturer
      *
-     * @param \Swagger\Client\Model\ManufacturerShort $manufacturer manufacturer
+     * @param \RemapDB\Model\ManufacturerShort $manufacturer manufacturer
      *
      * @return $this
      */
@@ -277,7 +277,7 @@ class SearchResult implements ModelInterface, ArrayAccess
     /**
      * Gets model
      *
-     * @return \Swagger\Client\Model\ModelShort
+     * @return \RemapDB\Model\ModelShort
      */
     public function getModel()
     {
@@ -287,7 +287,7 @@ class SearchResult implements ModelInterface, ArrayAccess
     /**
      * Sets model
      *
-     * @param \Swagger\Client\Model\ModelShort $model model
+     * @param \RemapDB\Model\ModelShort $model model
      *
      * @return $this
      */
@@ -301,7 +301,7 @@ class SearchResult implements ModelInterface, ArrayAccess
     /**
      * Gets generation
      *
-     * @return \Swagger\Client\Model\GenerationShort
+     * @return \RemapDB\Model\GenerationShort
      */
     public function getGeneration()
     {
@@ -311,7 +311,7 @@ class SearchResult implements ModelInterface, ArrayAccess
     /**
      * Sets generation
      *
-     * @param \Swagger\Client\Model\GenerationShort $generation generation
+     * @param \RemapDB\Model\GenerationShort $generation generation
      *
      * @return $this
      */
@@ -325,7 +325,7 @@ class SearchResult implements ModelInterface, ArrayAccess
     /**
      * Gets engine
      *
-     * @return \Swagger\Client\Model\EngineShort
+     * @return \RemapDB\Model\EngineShort
      */
     public function getEngine()
     {
@@ -335,7 +335,7 @@ class SearchResult implements ModelInterface, ArrayAccess
     /**
      * Sets engine
      *
-     * @param \Swagger\Client\Model\EngineShort $engine engine
+     * @param \RemapDB\Model\EngineShort $engine engine
      *
      * @return $this
      */

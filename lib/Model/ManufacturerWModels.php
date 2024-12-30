@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RemapDB\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \RemapDB\ObjectSerializer;
 
 /**
  * ManufacturerWModels Class Doc Comment
  *
  * @category Class
  * @description Manufacturer metadata object
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,8 +61,8 @@ class ManufacturerWModels implements ModelInterface, ArrayAccess
         'name' => 'string',
         'slug' => 'string',
         'logo' => 'string',
-        'type' => '\Swagger\Client\Model\VehicleTypeShort',
-        'models' => '\Swagger\Client\Model\ManufacturerModel[]'
+        'type' => '\RemapDB\Model\VehicleTypeShort',
+        'models' => '\RemapDB\Model\ManufacturerModel[]'
     ];
 
     /**
@@ -331,7 +331,7 @@ class ManufacturerWModels implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \Swagger\Client\Model\VehicleTypeShort
+     * @return \RemapDB\Model\VehicleTypeShort
      */
     public function getType()
     {
@@ -341,7 +341,7 @@ class ManufacturerWModels implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \Swagger\Client\Model\VehicleTypeShort $type type
+     * @param \RemapDB\Model\VehicleTypeShort $type type
      *
      * @return $this
      */
@@ -355,7 +355,7 @@ class ManufacturerWModels implements ModelInterface, ArrayAccess
     /**
      * Gets models
      *
-     * @return \Swagger\Client\Model\ManufacturerModel[]
+     * @return \RemapDB\Model\ManufacturerModel[]
      */
     public function getModels()
     {
@@ -365,7 +365,7 @@ class ManufacturerWModels implements ModelInterface, ArrayAccess
     /**
      * Sets models
      *
-     * @param \Swagger\Client\Model\ManufacturerModel[] $models List with all the models.
+     * @param \RemapDB\Model\ManufacturerModel[] $models List with all the models.
      *
      * @return $this
      */

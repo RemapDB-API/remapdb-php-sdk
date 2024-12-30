@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RemapDB\api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RemapDB\ApiException;
+use RemapDB\Configuration;
+use RemapDB\HeaderSelector;
+use RemapDB\ObjectSerializer;
 
 /**
  * ModelsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class ModelsApi
      * @param  int $model_id Model ID. (required)
      * @param  string $accept_language Method accept custom language. Content of the header should be the code of the language you are requesting. E.g.: &#x60;en&#x60;. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RemapDB\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ModelWGenerations
+     * @return \RemapDB\Model\ModelWGenerations
      */
     public function getModel($model_id, $accept_language = null)
     {
@@ -112,13 +112,13 @@ class ModelsApi
      * @param  int $model_id Model ID. (required)
      * @param  string $accept_language Method accept custom language. Content of the header should be the code of the language you are requesting. E.g.: &#x60;en&#x60;. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RemapDB\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ModelWGenerations, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RemapDB\Model\ModelWGenerations, HTTP status code, HTTP response headers (array of strings)
      */
     public function getModelWithHttpInfo($model_id, $accept_language = null)
     {
-        $returnType = '\Swagger\Client\Model\ModelWGenerations';
+        $returnType = '\RemapDB\Model\ModelWGenerations';
         $request = $this->getModelRequest($model_id, $accept_language);
 
         try {
@@ -170,7 +170,7 @@ class ModelsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ModelWGenerations',
+                        '\RemapDB\Model\ModelWGenerations',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -178,7 +178,7 @@ class ModelsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -186,7 +186,7 @@ class ModelsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -194,7 +194,7 @@ class ModelsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -202,7 +202,7 @@ class ModelsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -210,7 +210,7 @@ class ModelsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -254,7 +254,7 @@ class ModelsApi
      */
     public function getModelAsyncWithHttpInfo($model_id, $accept_language = null)
     {
-        $returnType = '\Swagger\Client\Model\ModelWGenerations';
+        $returnType = '\RemapDB\Model\ModelWGenerations';
         $request = $this->getModelRequest($model_id, $accept_language);
 
         return $this->client
@@ -410,9 +410,9 @@ class ModelsApi
      * @param  int $manufacturer_id Manufacturer ID. (required)
      * @param  string $accept_language Method accept custom language. Content of the header should be the code of the language you are requesting. E.g.: &#x60;en&#x60;. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RemapDB\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ManufacturerModel[]
+     * @return \RemapDB\Model\ManufacturerModel[]
      */
     public function listModels($manufacturer_id, $accept_language = null)
     {
@@ -428,13 +428,13 @@ class ModelsApi
      * @param  int $manufacturer_id Manufacturer ID. (required)
      * @param  string $accept_language Method accept custom language. Content of the header should be the code of the language you are requesting. E.g.: &#x60;en&#x60;. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RemapDB\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ManufacturerModel[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RemapDB\Model\ManufacturerModel[], HTTP status code, HTTP response headers (array of strings)
      */
     public function listModelsWithHttpInfo($manufacturer_id, $accept_language = null)
     {
-        $returnType = '\Swagger\Client\Model\ManufacturerModel[]';
+        $returnType = '\RemapDB\Model\ManufacturerModel[]';
         $request = $this->listModelsRequest($manufacturer_id, $accept_language);
 
         try {
@@ -486,7 +486,7 @@ class ModelsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ManufacturerModel[]',
+                        '\RemapDB\Model\ManufacturerModel[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -494,7 +494,7 @@ class ModelsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -502,7 +502,7 @@ class ModelsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -510,7 +510,7 @@ class ModelsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -518,7 +518,7 @@ class ModelsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -526,7 +526,7 @@ class ModelsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\RemapDB\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -570,7 +570,7 @@ class ModelsApi
      */
     public function listModelsAsyncWithHttpInfo($manufacturer_id, $accept_language = null)
     {
-        $returnType = '\Swagger\Client\Model\ManufacturerModel[]';
+        $returnType = '\RemapDB\Model\ManufacturerModel[]';
         $request = $this->listModelsRequest($manufacturer_id, $accept_language);
 
         return $this->client

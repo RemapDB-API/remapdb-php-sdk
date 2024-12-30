@@ -1,4 +1,4 @@
-# Swagger\Client\SearchApi
+# RemapDB\SearchApi
 
 All URIs are relative to *https://api.remapdb.com/v1/vehicles*
 
@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**search**](SearchApi.md#search) | **GET** /search | Searches through manufacturers, models, generations and engines
 
 # **search**
-> \Swagger\Client\Model\InlineResponse200 search($query, $accept_language)
+> \RemapDB\Model\InlineResponse200 search($query, $accept_language)
 
 Searches through manufacturers, models, generations and engines
 
@@ -18,11 +18,11 @@ Searches through manufacturers, models, generations and engines.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('x-api-key', 'YOUR_API_KEY');
+$config = RemapDB\Configuration::getDefaultConfiguration()->setApiKey('x-api-key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('x-api-key', 'Bearer');
+// $config = RemapDB\Configuration::getDefaultConfiguration()->setApiKeyPrefix('x-api-key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\SearchApi(
+$apiInstance = new RemapDB\api\SearchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\RemapDB\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 

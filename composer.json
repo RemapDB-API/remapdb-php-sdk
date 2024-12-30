@@ -1,5 +1,5 @@
 {
-    "name": "git_user_id/git_repo_id",
+    "name": "remapdb-api/remapdb-php-sdk",
     "description": "",
     "keywords": [
         "swagger",
@@ -29,9 +29,9 @@
         "friendsofphp/php-cs-fixer": "^3.5"
     },
     "autoload": {
-        "psr-4": { "Swagger\\Client\\" : "lib/" }
+        "psr-4": { "RemapDB\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "Swagger\\Client\\" : "test/" }
+        "psr-4": { "RemapDB\\" : "test/" }
     }
 }

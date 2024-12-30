@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RemapDB\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \RemapDB\ObjectSerializer;
 
 /**
  * EngineStagePerformance Class Doc Comment
  *
  * @category Class
  * @description Tuning/Remap stage performance object
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class EngineStagePerformance implements ModelInterface, ArrayAccess
         'torque' => 'int',
         'top_speed' => 'int',
         'zero_to_hundred' => 'float',
-        'dyno_values' => '\Swagger\Client\Model\EnginePerformanceDyno'
+        'dyno_values' => '\RemapDB\Model\EnginePerformanceDyno'
     ];
 
     /**
@@ -325,7 +325,7 @@ class EngineStagePerformance implements ModelInterface, ArrayAccess
     /**
      * Gets dyno_values
      *
-     * @return \Swagger\Client\Model\EnginePerformanceDyno
+     * @return \RemapDB\Model\EnginePerformanceDyno
      */
     public function getDynoValues()
     {
@@ -335,7 +335,7 @@ class EngineStagePerformance implements ModelInterface, ArrayAccess
     /**
      * Sets dyno_values
      *
-     * @param \Swagger\Client\Model\EnginePerformanceDyno $dyno_values dyno_values
+     * @param \RemapDB\Model\EnginePerformanceDyno $dyno_values dyno_values
      *
      * @return $this
      */

@@ -9,10 +9,10 @@ Name | Type | Description | Notes
 **year** | **int** | Year of manufacture. | [optional] 
 **year_end** | **int** | End year of manufacture. | [optional] 
 **photo** | **string** | Link to generations&#x27;s photo. | [optional] 
-**type** | [**\Swagger\Client\Model\VehicleTypeShort**](VehicleTypeShort.md) |  | [optional] 
-**manufacturer** | [**\Swagger\Client\Model\ManufacturerShort**](ManufacturerShort.md) |  | [optional] 
-**model** | [**\Swagger\Client\Model\ModelShort**](ModelShort.md) |  | [optional] 
-**engines** | [**\Swagger\Client\Model\Engine[]**](Engine.md) | List with all the engines. | [optional] 
+**type** | [**\RemapDB\Model\VehicleTypeShort**](VehicleTypeShort.md) |  | [optional] 
+**manufacturer** | [**\RemapDB\Model\ManufacturerShort**](ManufacturerShort.md) |  | [optional] 
+**model** | [**\RemapDB\Model\ModelShort**](ModelShort.md) |  | [optional] 
+**engines** | [**\RemapDB\Model\Engine[]**](Engine.md) | List with all the engines. | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

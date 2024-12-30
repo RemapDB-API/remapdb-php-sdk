@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RemapDB\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \RemapDB\ObjectSerializer;
 
 /**
  * ManufacturerModel Class Doc Comment
  *
  * @category Class
  * @description Model object
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,8 +61,8 @@ class ManufacturerModel implements ModelInterface, ArrayAccess
         'name' => 'string',
         'slug' => 'string',
         'photo' => 'string',
-        'type' => '\Swagger\Client\Model\VehicleTypeShort',
-        'manufacturer' => '\Swagger\Client\Model\ManufacturerShort'
+        'type' => '\RemapDB\Model\VehicleTypeShort',
+        'manufacturer' => '\RemapDB\Model\ManufacturerShort'
     ];
 
     /**
@@ -331,7 +331,7 @@ class ManufacturerModel implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \Swagger\Client\Model\VehicleTypeShort
+     * @return \RemapDB\Model\VehicleTypeShort
      */
     public function getType()
     {
@@ -341,7 +341,7 @@ class ManufacturerModel implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \Swagger\Client\Model\VehicleTypeShort $type type
+     * @param \RemapDB\Model\VehicleTypeShort $type type
      *
      * @return $this
      */
@@ -355,7 +355,7 @@ class ManufacturerModel implements ModelInterface, ArrayAccess
     /**
      * Gets manufacturer
      *
-     * @return \Swagger\Client\Model\ManufacturerShort
+     * @return \RemapDB\Model\ManufacturerShort
      */
     public function getManufacturer()
     {
@@ -365,7 +365,7 @@ class ManufacturerModel implements ModelInterface, ArrayAccess
     /**
      * Sets manufacturer
      *
-     * @param \Swagger\Client\Model\ManufacturerShort $manufacturer manufacturer
+     * @param \RemapDB\Model\ManufacturerShort $manufacturer manufacturer
      *
      * @return $this
      */

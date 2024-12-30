@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RemapDB\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \RemapDB\ObjectSerializer;
 
 /**
  * Engine Class Doc Comment
  *
  * @category Class
  * @description Engine object
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -66,9 +66,9 @@ class Engine implements ModelInterface, ArrayAccess
         'cylinders' => 'int',
         'engine_type' => 'string',
         'fuel' => 'string',
-        'ecus' => '\Swagger\Client\Model\EngineEcu[]',
-        'tcus' => '\Swagger\Client\Model\EngineTcu[]',
-        'performance' => '\Swagger\Client\Model\EnginePerformance'
+        'ecus' => '\RemapDB\Model\EngineEcu[]',
+        'tcus' => '\RemapDB\Model\EngineTcu[]',
+        'performance' => '\RemapDB\Model\EnginePerformance'
     ];
 
     /**
@@ -487,7 +487,7 @@ class Engine implements ModelInterface, ArrayAccess
     /**
      * Gets ecus
      *
-     * @return \Swagger\Client\Model\EngineEcu[]
+     * @return \RemapDB\Model\EngineEcu[]
      */
     public function getEcus()
     {
@@ -497,7 +497,7 @@ class Engine implements ModelInterface, ArrayAccess
     /**
      * Sets ecus
      *
-     * @param \Swagger\Client\Model\EngineEcu[] $ecus List of ECU's used in this engine.
+     * @param \RemapDB\Model\EngineEcu[] $ecus List of ECU's used in this engine.
      *
      * @return $this
      */
@@ -511,7 +511,7 @@ class Engine implements ModelInterface, ArrayAccess
     /**
      * Gets tcus
      *
-     * @return \Swagger\Client\Model\EngineTcu[]
+     * @return \RemapDB\Model\EngineTcu[]
      */
     public function getTcus()
     {
@@ -521,7 +521,7 @@ class Engine implements ModelInterface, ArrayAccess
     /**
      * Sets tcus
      *
-     * @param \Swagger\Client\Model\EngineTcu[] $tcus List of TCU's used in this engine.
+     * @param \RemapDB\Model\EngineTcu[] $tcus List of TCU's used in this engine.
      *
      * @return $this
      */
@@ -535,7 +535,7 @@ class Engine implements ModelInterface, ArrayAccess
     /**
      * Gets performance
      *
-     * @return \Swagger\Client\Model\EnginePerformance
+     * @return \RemapDB\Model\EnginePerformance
      */
     public function getPerformance()
     {
@@ -545,7 +545,7 @@ class Engine implements ModelInterface, ArrayAccess
     /**
      * Sets performance
      *
-     * @param \Swagger\Client\Model\EnginePerformance $performance performance
+     * @param \RemapDB\Model\EnginePerformance $performance performance
      *
      * @return $this
      */

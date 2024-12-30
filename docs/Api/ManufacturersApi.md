@@ -1,4 +1,4 @@
-# Swagger\Client\ManufacturersApi
+# RemapDB\ManufacturersApi
 
 All URIs are relative to *https://api.remapdb.com/v1/vehicles*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**listManufacturers**](ManufacturersApi.md#listmanufacturers) | **GET** /manufacturers/type/{type_id} | Show all manufacturers from specific type
 
 # **getManufacturer**
-> \Swagger\Client\Model\ManufacturerWModels getManufacturer($manufacturer_id, $accept_language)
+> \RemapDB\Model\ManufacturerWModels getManufacturer($manufacturer_id, $accept_language)
 
 Show all manufacturer metadata along with its corresponding models
 
@@ -19,11 +19,11 @@ Show all manufacturer metadata along with its corresponding models.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('x-api-key', 'YOUR_API_KEY');
+$config = RemapDB\Configuration::getDefaultConfiguration()->setApiKey('x-api-key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('x-api-key', 'Bearer');
+// $config = RemapDB\Configuration::getDefaultConfiguration()->setApiKeyPrefix('x-api-key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ManufacturersApi(
+$apiInstance = new RemapDB\api\ManufacturersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ManufacturerWModels**](../Model/ManufacturerWModels.md)
+[**\RemapDB\Model\ManufacturerWModels**](../Model/ManufacturerWModels.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **listManufacturers**
-> \Swagger\Client\Model\Manufacturer[] listManufacturers($type_id, $accept_language)
+> \RemapDB\Model\Manufacturer[] listManufacturers($type_id, $accept_language)
 
 Show all manufacturers from specific type
 
@@ -75,11 +75,11 @@ Show all manufacturers from specific type.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('x-api-key', 'YOUR_API_KEY');
+$config = RemapDB\Configuration::getDefaultConfiguration()->setApiKey('x-api-key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('x-api-key', 'Bearer');
+// $config = RemapDB\Configuration::getDefaultConfiguration()->setApiKeyPrefix('x-api-key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ManufacturersApi(
+$apiInstance = new RemapDB\api\ManufacturersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -106,7 +106,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Manufacturer[]**](../Model/Manufacturer.md)
+[**\RemapDB\Model\Manufacturer[]**](../Model/Manufacturer.md)
 
 ### Authorization
 

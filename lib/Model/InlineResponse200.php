@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RemapDB\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \RemapDB\ObjectSerializer;
 
 /**
  * InlineResponse200 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RemapDB
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class InlineResponse200 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'results' => '\Swagger\Client\Model\SearchResult[]',
+        'results' => '\RemapDB\Model\SearchResult[]',
         'total' => 'int'
     ];
 
@@ -210,7 +210,7 @@ class InlineResponse200 implements ModelInterface, ArrayAccess
     /**
      * Gets results
      *
-     * @return \Swagger\Client\Model\SearchResult[]
+     * @return \RemapDB\Model\SearchResult[]
      */
     public function getResults()
     {
@@ -220,7 +220,7 @@ class InlineResponse200 implements ModelInterface, ArrayAccess
     /**
      * Sets results
      *
-     * @param \Swagger\Client\Model\SearchResult[] $results List with search results.
+     * @param \RemapDB\Model\SearchResult[] $results List with search results.
      *
      * @return $this
      */
