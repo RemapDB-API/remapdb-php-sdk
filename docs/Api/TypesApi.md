@@ -1,4 +1,4 @@
-# RemapDB\TypesApi
+# Swagger\Client\TypesApi
 
 All URIs are relative to *https://api.remapdb.com/v1/vehicles*
 
@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**listTypes**](TypesApi.md#listtypes) | **GET** /types | Show vehicle types
 
 # **listTypes**
-> \RemapDB\Model\VehicleType[] listTypes($accept_language)
+> \Swagger\Client\Model\VehicleType[] listTypes($accept_language)
 
 Show vehicle types
 
@@ -18,17 +18,17 @@ Provides a list of all available vehicle types.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = RemapDB\Configuration::getDefaultConfiguration()->setApiKey('x-api-key', 'YOUR_API_KEY');
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('x-api-key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = RemapDB\Configuration::getDefaultConfiguration()->setApiKeyPrefix('x-api-key', 'Bearer');
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('x-api-key', 'Bearer');
 
-$apiInstance = new RemapDB\api\TypesApi(
+$apiInstance = new Swagger\Client\Api\TypesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$accept_language = "accept_language_example"; // string | Method accept custom language. Content of the header should be the code of the language you are requesting.
+$accept_language = "accept_language_example"; // string | Method accept custom language. Content of the header should be the code of the language you are requesting. E.g.: `en`.
 
 try {
     $result = $apiInstance->listTypes($accept_language);
@@ -43,11 +43,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **accept_language** | **string**| Method accept custom language. Content of the header should be the code of the language you are requesting. | [optional]
+ **accept_language** | **string**| Method accept custom language. Content of the header should be the code of the language you are requesting. E.g.: &#x60;en&#x60;. | [optional]
 
 ### Return type
 
-[**\RemapDB\Model\VehicleType[]**](../Model/VehicleType.md)
+[**\Swagger\Client\Model\VehicleType[]**](../Model/VehicleType.md)
 
 ### Authorization
 
